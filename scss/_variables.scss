@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+$colors:(
+    "primary":hsl(322, 100%, 66%),
+    "black":hsl(192, 100%, 9%),
+    "white":hsl(193, 100%, 96%),
+    "gray":hsl(208, 11%, 55%)
+);
+
+$font-size:18px;
+
+$layout:(
+    'mobile':375px,
+    "desktop":1440px
+);
+
+$background-image:(
+    "mobile-hero":url(../images/bg-hero-mobile.svg),
+    "desktop-hero":url(../images/bg-hero-desktop.svg)
+);
+
+$font-weight-bold:700;
+$font-weight-regular:400;
+$font-weight-medium:600;

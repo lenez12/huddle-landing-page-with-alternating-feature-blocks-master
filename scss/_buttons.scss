@@ -1,0 +1,33 @@
+@use 'variables';
+@mixin button-style($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border-radius: 100px;
+    box-shadow: 1px  1px 10px rgba(128, 128, 128, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// Block .button
+.button {
+    &__text {
+        font-size: 16px;
+    }
+}
+
+// Jenis button
+.button--primary {
+    @include button-style(hsl(322, 100%, 66%), white);
+    
+}
+
+.button--secondary {
+    @include button-style(#ffffff, #333333);
+}

@@ -1,0 +1,194 @@
+@use 'variables' as var;
+@use 'mixin';
+
+.footer {
+    background-color: map-get(var.$colors,"black");
+    position: relative;
+    margin-top: 10rem;
+    padding: 12rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .footer__logo{
+        width: 140px;
+    }
+    .footer__act {
+        background-color: white;
+        position: absolute;
+        padding: 3rem 0;
+        left: 2rem;
+        right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.212);
+        border-radius: 1rem;
+        max-height: 200px;
+        top: -100px;
+        font-weight: 700;
+        .footer__button {
+            padding: 1rem 2rem;
+            font-size: 12px;
+            // width: 50%;
+        }
+    }
+
+    .footer__content {
+        display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+    .footer__list-item {
+        color: map-get(var.$colors, "white");
+        display: flex;
+        gap: 2rem;
+        align-items: start;
+        font-size: 16px;
+        .footer__list-desc {
+            line-height: 25px;
+        }
+    }
+  
+
+    .footer__nav {
+        color: map-get(var.$colors, "white");
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        .footer__nav-item {
+            flex-direction: column;
+            gap: 1.5rem;
+            display: flex;
+
+        }
+    }
+    .footer__icon-wrapper {
+        display: flex;
+        gap: 2rem;
+        color: white;
+        justify-content: center;
+    }
+    .footer__icon {
+        display: inline-block;
+        color: white;
+        font-size: 1rem;
+        border: 1px solid white;
+        border-radius: 120px;
+        padding: 1rem 1.1rem;
+    }
+
+    .footer__copyright {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+
+@include mixin.media(desktop){
+        background-color: map-get(var.$colors, "black");
+        position: relative;
+        margin-top: 20rem;
+        padding:12em 4rem 4rem 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    
+        .footer__logo {
+            width: 250px;
+        }
+    
+        .footer__act {
+            background-color: white;
+            position: absolute;
+            padding: 4rem 0;
+            left: 300px;
+            right: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+              box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.212);            border-radius: 1rem;
+            max-height: 200px;
+            top: -170px;
+            height: 290px;
+            max-height: 300px;
+            font-size: 2rem;
+            font-weight: 600;
+    
+            .footer__button {
+                padding: 2rem 7rem;
+                font-size: 1rem;
+                // width: 50%;
+            }
+        }
+    
+        .footer__content {
+            display: grid;
+            grid-template-columns: 430px 1.5fr 1fr;
+            justify-content: space-around;
+            gap: 6rem;
+        }
+    
+        .footer__list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    
+        .footer__list-item {
+            color: map-get(var.$colors, "white");
+            display: flex;
+            gap: 2rem;
+            align-items: start;
+            font-size: 16px;
+
+            .footer__list-desc {
+                line-height: 25px;
+            }
+        }
+    
+    
+        .footer__nav {
+            color: map-get(var.$colors, "white");
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            .footer__nav-item {
+                flex-direction: column;
+                gap: 1.5rem;
+                display: flex;
+                
+            }
+        }
+    
+        .footer__icon-wrapper {
+            display: flex;
+            gap: 1rem;
+            color: white;
+            justify-content: start;
+        }
+    
+        .footer__icon {
+            display: inline-block;
+            color: white;
+            font-size: .7rem;
+            border: 1px solid white;
+            border-radius: 120px;
+            padding: .6rem;
+        }
+    
+        .footer__copyright {
+            text-align: right;
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+        }
+}
+
+   
+}

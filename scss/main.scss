@@ -1,0 +1,21 @@
+@use 'mixin';
+@use 'variables' as var;
+@use 'buttons';
+@use 'header';
+@use 'feature';
+@use 'footer';
+
+body {
+    font-size: var.$font-size;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 100%;
+    color: black;
+}
+
+.container {
+    padding: 3px 5px 4px;
+}
