@@ -374,7 +374,7 @@
     font-weight: 600;
   }
   .footer .footer__act .footer__button {
-    padding: 2rem 7rem;
+    padding: 1rem 5rem;
     font-size: 1rem;
   }
   .footer .footer__content {
@@ -433,6 +433,7 @@
 
 body {
   font-size: 18px;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
